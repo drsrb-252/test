@@ -66,7 +66,9 @@ model-viewer {
   margin-left: 1rem;
   margin-right: 0.75rem;
   padding-top: 3rem;
-  /*border:2px dashed yellow;*/
+  position: absolute;
+  top: -10rem;
+    /*border:2px dashed yellow;*/
 }
 h1 {
   font-size: 3rem;
@@ -107,6 +109,7 @@ span {
   grid-row: 2/5;
   background: url('../media/img/dustdevilBG.webp') left top/100% no-repeat;
   margin-bottom: 0;
+  position: relative;
   /*border: 2px dashed blue;*/
 
 }
