@@ -7,11 +7,13 @@ Gradient for Panamax =  linear-gradient(#82c0d8, #c0eaf9);
 Directions for DD = #1da4d9
 Immediate Ground for DD = #aa5220
 Lower Ground for DD = #c7845d
-Gradient for DD = 
+Gradient for DD = (#aa5220, #c7845d)
 ---*/
 
 /*---GLOBAL---*/
-
+*, *::before, *::after{
+    box-sizing:border-box;
+}
 :root {
   margin: 0;
   padding: 0;
@@ -66,9 +68,9 @@ model-viewer {
   margin-left: 1rem;
   margin-right: 0.75rem;
   padding-top: 3rem;
-  position: absolute;
-  top: -10rem;
-    /*border:2px dashed yellow;*/
+  /*position: absolute;
+  top: -10rem;*/
+/*border:2px dashed yellow;*/
 }
 h1 {
   font-size: 3rem;
@@ -109,7 +111,7 @@ span {
   grid-row: 2/5;
   background: url('../media/img/dustdevilBG.webp') left top/100% no-repeat;
   margin-bottom: 0;
-  position: relative;
+  /*position: relative;*/
   /*border: 2px dashed blue;*/
 
 }
@@ -243,7 +245,7 @@ span {
 
 @keyframes circle {
   from { transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg); }
-  to   { transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg); }
+  to   { transform: translateX(-50%) rotate(70deg) translateX(50px) rotate(-360deg); }
 }
 
 @keyframes elongate {
@@ -264,7 +266,7 @@ model-viewer[ar-status="session-started"] > #ar-prompt {
 }
 
 model-viewer > #ar-prompt > img {
-  animation: circle 4s linear infinite;
+  animation: circle 3s linear infinite;
 }
 
 
