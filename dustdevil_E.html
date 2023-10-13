@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/dust_devil.css" />
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+    <title>Panamax-I</title>
+  </head>
+  <body>
+    <main class="myGrid">
+      <div class="directions">
+        <h2><u>How to Interact with the 3D Model</u></h2>
+        <p>
+          <span>Tumble or Spin</span> Click and drag using the left mouse button
+        </p>
+        <p>
+          <span>Pan or Slide</span> Click and drag using the right mouse button
+        </p>
+        <p>
+          <span>Zooming in or out</span> Manipulate the middle mouse button or
+          scroll wheel
+        </p>
+        <p>
+          <span
+            >Remember to play the audio narration as your interact with the 3D
+            model</span
+          >
+        </p>
+        
+      </div>
+      <div class="mediaContainer">
+        <p class="audioContainer"><audio controls controlslist="nodownload">
+          <source src="./media/audio/dustDevil_i.mp3" type="audio/mpeg"/>
+          <source src="./media/audio/dustDevil_i.ogg" type="audio/ogg"/>
+          <source>
+        </audio></p>
+        <model-viewer src="./media/gltf/tripleDizzle.glb" camera-controls shadow-intensity="2" field-of-view="30deg"><button class="Hotspot" slot="hotspot-1" data-surface="0 0 8505 8506 8507 0.024 0.690 0.286" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">The funnel mane</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-surface="1 0 13821 13822 13823 0.040 0.231 0.729" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">The base mane</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+      </div></model-viewer>
+      </div>
+    </main>
+  </body>
+  <!--TEST
+  <br />
+  WESTSIDE, MANE-->
+</html>
