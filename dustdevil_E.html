@@ -12,12 +12,72 @@
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./css/dust_devil.css" />
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"
+    ></script>
     <title>Panamax-I</title>
   </head>
   <body>
-    <main class="myGrid">
+    <main class="media-container">
+      <div class="directions">
+        <h2><u>Interactive 3D Model of a Dust Devil</u></h2>
+        <p class="description">
+          This interactive 3D model allows you to explore the composition of a dust devil and learn about its behavior. Please see the direction below in order to interact with the 3D model.
+        </p>
+      </br>
+        <div class="tags">
+        <p class="specifics">
+          <span class="material-symbols-outlined icon">
+            360
+            </span><span class="label">Tumble or Spin</span> 
+        </p>
+        <p class="specifics">
+        Click and drag using the left mouse button
+      </p>
+      </div>
+      <div class="tags">
+        <p class="specifics">
+          <span class="material-symbols-outlined icon">
+            pan_tool_alt
+            </span>
+          <span class="label">Pan or Slide</span> 
+        </p>
+        <p class="specifics">Click and drag using the right mouse button</p>
+        </div>
+        <div class="tags">
+        <p class="specifics">
+          <span class="material-symbols-outlined icon">
+            zoom_out_map
+            </span>
+          <span class="label">Zooming in or out</span>
+          <p class="specifics">Manipulate the middle mouse button or scroll wheel</p>
+        </p>
+      </div>
+        <p class="description">
+          Remember to play the audio narration as your interact with the 3D
+            model
+        </p>
+        <p class="audio-container">
+          <audio controls controlslist="nodownload">
+            <source src="./media/audio/dustDevil_i.mp3" type="audio/mpeg" />
+            <source src="./media/audio/dustDevil_i.ogg" type="audio/ogg" />
+            <source />
+          </audio>
+        </p>
+      </div>
+      <img src="./media/img/dustdevilBG.webp" alt="" />
+      <model-viewer
+        src="./media/gltf/tripleDusty.glb"
+        shadow-intensity="1"
+        camera-controls
+        autoplay
+        touch-action="pan-y"
+      ></model-viewer>
+    </main>
+    <!-- <main class="myGrid">
       <div class="directions">
         <h2><u>How to Interact with the 3D Model</u></h2>
         <p>
@@ -59,9 +119,6 @@
           <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
       </div></model-viewer>
       </div>
-    </main>
+    </main> -->
   </body>
-  <!--TEST
-  <br />
-  WESTSIDE, MANE-->
 </html>

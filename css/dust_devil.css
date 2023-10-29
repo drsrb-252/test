@@ -11,6 +11,8 @@ Gradient for DD = (#aa5220, #c7845d)
 ---*/
 
 /*---GLOBAL---*/
+
+/*---RESET---*/
 *, *::before, *::after{
     box-sizing:border-box;
 }
@@ -53,72 +55,99 @@ model-viewer {
   margin: 0;
   padding: 0;
 }
+
+/*---TAGS---*/
 html,
 body {
   font-family: "Raleway", sans-serif;
 }
 body {
-  width: 100vw;
-  border-bottom: 10px solid black;
-}
-model-viewer {
-  min-width: 90%;
-  min-height: 50%;
-  margin-top: 3rem;
-  margin-left: 1rem;
-  margin-right: 0.75rem;
-  padding-top: 3rem;
-  /*position: absolute;
-  top: -10rem;*/
-/*border:2px dashed yellow;*/
-}
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2rem;
-  padding-top: 1.5rem;
-}
-.directions {
-  grid-row: 1/2;
-  text-align: left;
-  color: #fdede4;
-  padding-left: 0.75rem;
-  background: /*#80b2cf #8abcd4*/ #1da4d9;
-  /*border:2px dashed yellow;*/
-}
-p {
-  margin-top: 1.3rem;
-  color: #124257;
-  font-size: 1.5rem;
-  line-height: 1rem;
-}
-span {
-  color: #2c8db6;
-  background-color: #fdede4;
-  padding: 5px;
-  line-height: 3rem;
-  font-weight: bolder;
-}
-.myGrid {
   width: 100%;
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  background: linear-gradient(/*#1da4d9, #82c0d8, #80b3cb,*/ #aa5220, /*#c0eaf9*/ #c7845d /*#9acde1*/);
-  margin-bottom:0;
-}
-.mediaContainer {
-  grid-row: 2/5;
-  background: url('../media/img/dustdevilBG.webp') left top/100% no-repeat;
-  margin-bottom: 0;
-  /*position: relative;*/
-  /*border: 2px dashed blue;*/
-
-}
-.audioContainer{
+  background: linear-gradient(#29a7d8, #29a7d8, #c67f5b, #c67f5b);
+  background-repeat: no-repeat;
+  background-color: #c67f5b;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+img{
+  width:100%;
+}
+model-viewer{
+  width: 99.7%;
+  height: 60vh;
+  margin-top: -60%;
+  overflow-x: hidden;
+}
+h1{
+  font-size: 3rem;
+  color: white;
+}
+/*---CLASSES---*/
+.media-container{
+  width: 90%;
+  height: auto;
+  background-color: #c67f5b;
+  overflow: hidden;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  /*---CHANGE FOR DESKTOP---*/
+  
+}
+.audio-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.directions{
+  width: 100%;
+  background-color: #29a7d8;
+  padding: 1rem;
+  color: white;
+}
+
+p.description{
+  font-size: 1.25rem;
+}
+p.specifics{
+  font-size: 1.25rem;
+  margin-bottom: .25rem;
+  /* width: 19ch; */
+}
+.tags{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+span.icon{
+  font-size: 2.6rem;
+  /* background-color: white;
+  color: #29a7d8; */
+  /* box-shadow: 2px 2px 7px black; */
+  margin-right: .5rem;
+  /* margin-top: 0.5rem; */
+  color: white;
+}
+span.label{
+  color: #29a7d8;
+  background-color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding: .25rem;
+  line-height: 0;
+}
+/*---MEDIA QUERY---*/
+@media only screen and (max-width: 700px) and (orientation: portrait){
+  model-viewer{
+    width: 99.7%;
+    height: 60vh;
+    margin-top: -70%;
+    overflow-x: hidden;
+  }
+  /* p{
+    color: red;
+  } */
+}
+
 /*-----MODEL-VIEWER CSS-----*/
 .Hotspot {
   background: #fff;
